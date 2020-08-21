@@ -1,3 +1,4 @@
+//filter is return array based on conditional
 var pilots = [
   {
     id: 2,

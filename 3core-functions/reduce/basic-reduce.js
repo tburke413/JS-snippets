@@ -1,3 +1,5 @@
+// reduce returns accumulator value into each evaluation of the function forEach item
+//    2nd parameter after callback function is default/starting value
 var pilots = [
   {
     id: 10,

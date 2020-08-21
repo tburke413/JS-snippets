@@ -1,4 +1,4 @@
-// What you have
+// map returns an array based on forEach logic
 let officers = [
   { id: 20, name: 'Captain Piett' },
   { id: 24, name: 'General Veers' },
@@ -6,29 +6,21 @@ let officers = [
   { id: 88, name: 'Commander Jerjerrod' }
 ];
 
-// What you need
-[20, 24, 56, 88]
+// Goal output of ids:
+// [20, 24, 56, 88]
 
-//----insert code here----
+//----------------------------------------------------------------------------//
+let ids = [];
+officers.map(data => ids.push(data.id));
 
-// let ids = [];
+console.log(`ids: `, ids)
+//----------------------------------------------------------------------------//
 
-// officers.map((data) => {
-//   ids.push(data.id);
-// });
+var officersIds = officers.map(officer => officer.id);
+console.log(`officersIds: `, officersIds)
 
-// var officersIds = officers.map(function (officer) {
-//   return officer.id
-// });
-
-// -----------------
-
-// Excellent Example 2
+//----------------------------------------------------------------------------//
 
 let ranks = [];
-
-// const officersIds = officers.map(officer => officer.name.split(' ')[0]);
-const officersIds = officers.map(officer => ranks.push(officer.name.split(' ')[0]));
-
-// console.log(officersIds);
-console.log(ranks);
+officers.map(officer => ranks.push(officer.name.split(' ')[0]));
+console.log(`ranks:`, ranks);
